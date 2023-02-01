@@ -16,8 +16,7 @@ class LoginView extends GetView<LoginController> {
             ? EdgeInsets.all(Get.height * 0.1)
             : EdgeInsets.all(Get.width * 0.1),
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(50),
-            color: Color.fromRGBO(193, 159, 119, 2)),
+            borderRadius: BorderRadius.circular(50), color: Colors.white),
         child: Row(
           // biru
 
@@ -29,7 +28,7 @@ class LoginView extends GetView<LoginController> {
                         borderRadius: BorderRadius.only(
                             topLeft: const Radius.circular(50),
                             bottomLeft: Radius.circular(50)),
-                        color: Color.fromARGB(193, 159, 119, 77)),
+                        color: Color.fromRGBO(193, 159, 119, 2)),
                     child: Padding(
                       padding: const EdgeInsets.all(30.0),
                       child: Column(
@@ -37,8 +36,16 @@ class LoginView extends GetView<LoginController> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const [
                           Text(
-                            "Login",
+                            "Welcome",
                             style: TextStyle(color: Colors.white, fontSize: 70),
+                          ),
+                          Text(
+                            "Please Sign In",
+                            style: TextStyle(color: Colors.white, fontSize: 30),
+                          ),
+                          Text(
+                            "Start Journey With Us",
+                            style: TextStyle(color: Colors.white, fontSize: 20),
                           ),
                         ],
                       ),
@@ -70,6 +77,11 @@ class LoginView extends GetView<LoginController> {
                               "Please Sign In",
                               style:
                                   TextStyle(color: Colors.grey, fontSize: 20),
+                            ),
+                            Text(
+                              "Start Journey With Us",
+                              style:
+                                  TextStyle(color: Colors.grey, fontSize: 15),
                             ),
                           ],
                         )
